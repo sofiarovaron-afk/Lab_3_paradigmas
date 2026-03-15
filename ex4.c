@@ -4,7 +4,7 @@
 FUNÇÃO (SEM EFEITO COLATERAL)
 
 Recebe a altitude atual por VALOR.
-Isso significa que a função trabalha com uma CÓPIA do valor.
+Então a função trabalha com uma CÓPIA do valor.
 
 Ela calcula uma nova altitude desejada e retorna esse valor,
 mas não altera a variável original do main.
@@ -25,9 +25,9 @@ int calcularNovaAltitude(int altitudeAtual) {
 PROCEDIMENTO (COM EFEITO COLATERAL)
 
 Recebe um ponteiro para altitude.
-Ou seja, recebe o ENDEREÇO da variável que está no main.
+Então ela recebe o ENDEREÇO da variável que está no main.
 
-Ao usar *altitude, acessamos diretamente o valor
+Ao usar *altitude da para acessar diretamente o valor
 naquele endereço de memória, alterando a variável original.
 */
 void forcarMudancaAltitude(int *altitude) {
@@ -55,7 +55,7 @@ int main() {
     printf("Altitude desejada retornada pela funcao: %d\n", altitudeDesejada);
 
     /*
-    Observe que a altitude original NÃO mudou,
+    A altitude original NÃO mudou,
     porque a função trabalhou com uma cópia.
     */
 
@@ -66,7 +66,7 @@ int main() {
     printf("\nAltitude no main apos procedimento: %d\n", altitude);
 
     /*
-    Agora a variável mudou, porque enviamos
+    Agora a variável mudou, porque enviei
     o ENDEREÇO dela usando &altitude.
     O procedimento alterou diretamente o valor
     armazenado na memória do main.
