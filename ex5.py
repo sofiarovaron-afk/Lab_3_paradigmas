@@ -16,3 +16,8 @@ print("Estoque antes do desconto:", estoque)
 aplicar_desconto(estoque, 20)
 
 print("Estoque após o desconto:", estoque)
+
+# Em Python os parâmetros são passados por referência ao objeto (call-by-sharing).
+# A lista estoque é mutável, então quando a função altera seus elementos,
+# ela modifica o mesmo objeto usado no programa principal.
+# Por isso o estoque original é alterado permanentemente.
