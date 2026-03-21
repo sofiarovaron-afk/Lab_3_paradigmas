@@ -9,7 +9,6 @@ def aplicar_desconto(lista_precos, desconto):
     """
     for i in range(len(lista_precos)):
         lista_precos[i] -= desconto  # altera o próprio objeto lista
-         bn 
 
 print("Estoque antes do desconto:", estoque)
 
